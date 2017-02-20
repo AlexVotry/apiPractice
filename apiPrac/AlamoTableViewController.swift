@@ -13,7 +13,7 @@ class AlamoTableViewController: UITableViewController {
 
     var crimeData:Array < String > = Array < String >()
     var spdCalls: [SpdCall]?
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getCrimeData("Stupid")
@@ -32,7 +32,6 @@ class AlamoTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "alamoCell", for: indexPath)
 
         cell.textLabel?.text = crimeData[indexPath.row]
-
         return cell
     }
 
@@ -50,7 +49,7 @@ class AlamoTableViewController: UITableViewController {
     if let value = data as? NSArray {
 
        for i in 0 ..< value.count {
-
+//         let spdCall[i] = SpdCall()
          if let crime = value[i] as? NSDictionary
          {
            if let description = crime["initial_type_description"] as? String
@@ -63,6 +62,7 @@ class AlamoTableViewController: UITableViewController {
          }
        }
     }
+    print("SpdCalls")
     DispatchQueue.main.async(execute: {self.do_table_refresh()})
   }
   func do_table_refresh()

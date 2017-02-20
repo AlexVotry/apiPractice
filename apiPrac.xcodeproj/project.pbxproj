@@ -18,6 +18,9 @@
 		FA7ECCAE1E5A31F1000B75CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7ECCAD1E5A31F1000B75CF /* Assets.xcassets */; };
 		FA7ECCB11E5A31F1000B75CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7ECCAF1E5A31F1000B75CF /* LaunchScreen.storyboard */; };
 		FA7ECCB91E5A326C000B75CF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7ECCB81E5A326C000B75CF /* TableViewController.swift */; };
+		FAAB02571E5B381B0014C759 /* Alamofire.framework in Resources */ = {isa = PBXBuildFile; fileRef = FA36D8661E5A3B9E00A174CA /* Alamofire.framework */; };
+		FAE963BA1E5B3A6C006E3170 /* CrimeSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE963B91E5B3A6C006E3170 /* CrimeSearchBarViewController.swift */; };
+		FAE963BE1E5B7DD1006E3170 /* Criteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE963BD1E5B7DD1006E3170 /* Criteria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,8 @@
 		FA7ECCB01E5A31F1000B75CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7ECCB21E5A31F1000B75CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7ECCB81E5A326C000B75CF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		FAE963B91E5B3A6C006E3170 /* CrimeSearchBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrimeSearchBarViewController.swift; sourceTree = "<group>"; };
+		FAE963BD1E5B7DD1006E3170 /* Criteria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Criteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,12 +99,14 @@
 				FA7ECCA51E5A31F1000B75CF /* ViewController.swift */,
 				FA2A95B91E5A88B300ED5023 /* Spd.swift */,
 				FA7ECCA71E5A31F1000B75CF /* Main.storyboard */,
+				FAE963B91E5B3A6C006E3170 /* CrimeSearchBarViewController.swift */,
 				FA36D8681E5A3D6200A174CA /* AlamoTableViewController.swift */,
 				FA7ECCB81E5A326C000B75CF /* TableViewController.swift */,
 				FA7ECCAD1E5A31F1000B75CF /* Assets.xcassets */,
 				FA7ECCAF1E5A31F1000B75CF /* LaunchScreen.storyboard */,
 				FA7ECCB21E5A31F1000B75CF /* Info.plist */,
 				FA7ECCAA1E5A31F1000B75CF /* apiPrac.xcdatamodeld */,
+				FAE963BD1E5B7DD1006E3170 /* Criteria.swift */,
 			);
 			path = apiPrac;
 			sourceTree = "<group>";
@@ -167,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAB02571E5B381B0014C759 /* Alamofire.framework in Resources */,
 				FA7ECCB11E5A31F1000B75CF /* LaunchScreen.storyboard in Resources */,
 				FA7ECCAE1E5A31F1000B75CF /* Assets.xcassets in Resources */,
 				FA7ECCA91E5A31F1000B75CF /* Main.storyboard in Resources */,
@@ -229,8 +237,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA7ECCA61E5A31F1000B75CF /* ViewController.swift in Sources */,
+				FAE963BA1E5B3A6C006E3170 /* CrimeSearchBarViewController.swift in Sources */,
 				FA7ECCAC1E5A31F1000B75CF /* apiPrac.xcdatamodeld in Sources */,
 				FA36D8691E5A3D6200A174CA /* AlamoTableViewController.swift in Sources */,
+				FAE963BE1E5B7DD1006E3170 /* Criteria.swift in Sources */,
 				FA7ECCA41E5A31F1000B75CF /* AppDelegate.swift in Sources */,
 				FA7ECCB91E5A326C000B75CF /* TableViewController.swift in Sources */,
 				FA2A95BA1E5A88B300ED5023 /* Spd.swift in Sources */,
@@ -372,6 +382,7 @@
 				DEVELOPMENT_TEAM = GVEKQPDQMH;
 				INFOPLIST_FILE = apiPrac/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"MTL_ENABLE_DEBUG_INFO[arch=*]" = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = alexvotry.com.alexvotry.apiPrac;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
