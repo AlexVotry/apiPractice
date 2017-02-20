@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 
+
 class AlamoTableViewController: UITableViewController {
 
     var crimeData:Array < String > = Array < String >()
